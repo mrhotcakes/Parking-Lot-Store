@@ -1,0 +1,309 @@
+/* GENERAL STYLES */
+    	.btn-primary {
+    		background: #FF4E0D;
+    		color: #ffffff;
+    		font-size: 23px;
+    		font-family: lato-bold;
+    		border: 0px;
+    		border-radius: 25px;
+    		padding: 6px 30px;
+		}
+		/* GENERAL STYLES */
+
+    	/* NAVIGATION */
+    	.navbar {
+    		/*position: fixed;*/
+    		width: 100%;
+    		height: 110px;
+    	}
+    	.navbar-light {
+    		background-color: #ffffff !important;
+    	}
+        .navbar-brand {
+    	    position: absolute;
+    		left: 50%;
+    		margin-left: -50px;
+    	}
+    	.navbar-brand img {
+    		width: 249px;
+		    margin-left: -68px;
+		    margin-top: 10px;
+    	}
+    	.sidenav {
+		  height: 100%;
+		  width: 0;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: #111;
+		  overflow-x: hidden;
+		  transition: 0.5s;
+		  padding-top: 60px;
+		}
+
+		.sidenav a {
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #818181;
+		  display: block;
+		  transition: 0.3s;
+		}
+
+		.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+
+		.sidenav .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+		.dropdown span {
+			padding-left: .5rem;
+		}
+		.dropdown-toggle {
+			padding-top: 0px;
+			margin-top: -2px;
+		}
+		.teal-bg {
+			background: #19A898;
+		}
+		.teal-text {
+			color: #19A898 !important;
+		}
+
+		.light-grey-text {
+			color: #7E8C93 !important;
+		}
+		.dark-grey-text {
+			color: #5F6060;
+		}
+		.orange-text {
+			color:#FFA60D;
+		}
+		.navbar-nav li span {
+			color: #5F6060;
+			display: block;
+			font-family: lato-bold;
+		}
+		.navbar-nav li a {
+			color: #19A898;
+			font-family: lato-black;
+		}
+		.login {
+			color: #5F6060 !important;
+		}
+		.left-collapsed-menu {
+			color: #ffffff;
+		    padding: 0px 10px;
+		    border-radius: 50%;
+		    display: flex;
+		    font-size:30px;
+		    cursor:pointer;
+		    align-self: center;
+		}
+		.nav-item {
+			font-size: 16px;
+			padding: 0 15px;
+			font-weight: bold;
+		}
+		/* NAVIGATION */
+
+		/* HOME Hero Image */
+		.hero-image img {
+			width: 100%;
+		}
+		.hero-text {
+			position: absolute;
+		    top: 40%;
+		    z-index: 0;
+		    left: 30px;
+		}
+		.hero-text h1 {
+			font-family: blueberry;
+			text-transform: uppercase;
+			font-size: 74px;
+			color: #FFA60D;
+		}
+		.hero-text p {
+			font-family: oswald-bold;
+			font-size: 31px;
+			color: #5F6060;
+		}
+		/* HOME HERO IMAGE */
+
+		header {
+			background: #19A898;
+		    height: 95px;
+		    text-align: center;
+		    color: #ffffff;
+		    display: flex;
+		}
+		/* PRICING PAGE */
+		.row-pricing {
+			border-top: 1px solid rgba(0,0,0,.1);
+			border-bottom: 1px solid rgba(0,0,0,.1);
+			padding: 50px;
+			box-shadow: 0px 0px 12px rgba(0,0,0,.1);
+			margin: 30px 0px;
+		}
+		.row-pricing ul {
+			padding-left: 10px;
+			list-style: none;
+		}
+		.row-pricing ul li {
+			font-family: lato-reg;
+			font-size: 16px;
+			padding: 5px 0px;
+		}
+		.row-pricing ul li:before {
+			content: '\f058';
+			font-family: "Font Awesome 5 Free";
+  			font-weight: 900;
+			color: #FFA60D;
+			padding-right: 5px;
+		}
+		.row-pricing h2 {
+			font-size: 30px;
+			font-family: lato-bold;
+			color: #000000;
+		}
+		.row-pricing .col-md-5 {
+			text-align: center;
+			border-right: 1px solid rgba(0,0,0,.1);
+		}
+		.row-pricing .btn-primary {
+			font-size: 22px;
+			font-family: lato-bold;
+			padding: 3px 40px;
+		}
+		.row-pricing .price {
+			color: #19A898;
+		    font-size: 49px;
+		    font-family: lato-bold;
+		    padding-bottom: 0px;
+			font-family: lato-bold;
+		}
+		.row-pricing .sale {
+			font-size: 30px;
+			color: #D9D9DA;
+			font-family: lato-bold;
+			margin-top: -30px;
+		}
+		.row-pricing .sale:before {
+			content: '';
+		    width: 98px;
+		    height: 47px;
+		    border-bottom: 1px solid red;
+		    -webkit-transform: translateY(22px) translateX(2px) rotate(167deg);
+		    position: absolute;
+		}
+		.flash-sale {
+		    background: #ff0000;
+		    color: #fff;
+		    position: absolute;
+		    width: 100%;
+		    left: -32%;
+		    top: -14%;
+
+		}
+		.flash-sale:after {
+			content: '';
+		    width: 0px;
+		    height: 0px;
+		    top: -7px;
+		    border-top: 33px solid transparent;
+		    border-bottom: 30px solid transparent;
+		    border-right: 28px solid #fff;
+		    position: absolute;
+		    right: -2px;
+		}
+		.flash-sale-text {
+			font-size: 29px;
+		    font-family: oswald-bold;
+		    padding-top: 3px;
+		    padding-bottom: 3px;
+		    padding-right: 45px;
+		    padding-left: 15px;
+		}
+		#min-box:after {
+			content: 'min';
+			position: absolute;
+		    color: #fff;
+		    margin-left: -9px;
+		    font-size: 11px;
+		    margin-top: 2px;
+		}
+		#sec-box:after {
+			content: 'sec';
+			position: absolute;
+		    color: #fff;
+		    margin-left: -9px;
+		    font-size: 11px;
+		    margin-top: 2px;
+		}
+		#min-box {
+			margin-top: 7px !important;
+			width: 40px;
+		    height: 25px;
+		    background: #ffffff;
+		    color: #000000;
+		    font-size: 15px;
+		    font-family: lato-reg;
+		}
+		#sec-box {
+			margin-top: 7px !important;
+			width: 40px;
+		    height: 25px;
+		    background: #ffffff;
+		    color: #000000;
+		    font-size: 15px;
+		    font-family: lato-reg;
+		}
+		@media (max-width: 1024px) {
+			.flash-sale {
+				width: 120%;
+				left: -45%;
+				margin-top: 10px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.flash-sale {
+				width: 100%;
+				
+			}
+			.row-pricing .col-md-5 {
+				border-right: 0px;
+			}
+		}
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+
+		/* FONTS */
+		@font-face {
+		  font-family: lato-reg;
+		  src: url(../fonts/Lato/Lato-Regular.ttf);
+		}
+		@font-face {
+		  font-family: lato-bold;
+		  src: url(../fonts/Lato/Lato-Bold.ttf);
+		}
+		@font-face {
+		  font-family: lato-black;
+		  src: url(../fonts/Lato/Lato-Black.ttf);
+		}
+		@font-face {
+		  font-family: blueberry;
+		  src: url(../fonts/Bluberry/BlueberryTTF/Bluberry_Grunge.ttf);
+		}
+		@font-face {
+		  font-family: oswald-bold;
+		  src: url(../fonts/oswald/oswald-bold.ttf);
+		}

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Improv</title>
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SEWB Development">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+        <!--<script src="js/scripts.js"></script>-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/temp.css">
+
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            var countdown = 30 * 60 * 1000;
+            var timerId = setInterval(function(){
+              countdown -= 1000;
+              var min = Math.floor(countdown / (60 * 1000));
+              //var sec = Math.floor(countdown - (min * 60 * 1000));  // wrong
+              var sec = Math.floor((countdown - (min * 60 * 1000)) / 1000);  //correct
+                console.log(countdown);
+              if (countdown <= 0) {
+                 alert("30 min!");
+                 clearInterval(timerId);
+                 //doSomething();
+              } else {
+                 document.getElementById("min-box").innerHTML = '<p class="mx-auto my-auto">' + min + '</p>';
+                 document.getElementById("sec-box").innerHTML = '<p class="mx-auto my-auto">' + sec + '</p>';
+              }
+
+            }, 1000); //1000ms. = 1sec.
+        </script>
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="images/improv-traced-logo.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <div onclick="openNav()" class="left-collapsed-menu teal-bg">&#9776;</div>
+                        <div id="mySidenav" class="sidenav">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <a href="#">About</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <span class="dark-grey-text">Location</span>
+                        <a class="nav-link dropdown-toggle teal-text" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            California
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a href="#" class="light-grey-text mr-1">ESPANOL</a> | <a href="#" class="dark-grey-text login"><i class="fas fa-user teal-text mx-1"></i> LOGIN</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <span class="dark-grey-text">See Our</span>
+                        <a href="#">Price</a>
+                    </li>
+                    <li class="nav-item active">
+                        <span class="dark-grey-text">24/7</span>
+                        <a href="#">Support</a>
+                    </li>
+                    <li class="nav-item active">
+                        <span class="dark-grey-text">How It</span>
+                        <a href="#">Works</a>
+                    </li>
+                    <li class="nav-item active">
+                        <span class="dark-grey-text">California</span>
+                        <a href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="container d-flex">
+                <h1 class="mx-auto my-auto">See Our <span class="orange-text">Price</span></h1>
+            </div>
+        </header>
+        <div class="container-fluid mt-5 p-0">
+            
+            <div class="row-pricing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-12 p-md-4">
+                            <div class="flash-sale d-flex">
+                                <div id="min-box" class="ml-auto my-auto d-inline-block">
+                                </div>
+                                <span class="my-auto px-1">:</span>
+                                <div id="sec-box" class="my-auto d-inline-block">
+                                </div>
+                                <span class="flash-sale-text my-auto">
+                                    FLASH SALE!
+                                </span>
+                            </div>
+                            <h2>Online CA Traffic School</h2>
+                            <p class="price">$24.95</p>
+                            <p class="sale">$34.95</p>
+                            <button type="button" class="btn btn-primary">Select</button>
+                        </div>
+                        <div class="col-md-7 col-12 p-md-4 pl-md-5">
+                            <p>Select this course if you received a <b>CA traffic ticket or were ordered by the court</b> to attend traffic school</p>
+                            <ul>
+                                <li>
+                                    4 Tickets to IMPROV® Comedy Club ($60 value)
+                                </li>
+                                <li>
+                                    24/7 Concierge Customer Service ($9.50 value)
+                                </li>
+                                <li>
+                                    Printable Cheat Sheets to Use During Final Quiz ($4.50 value)
+                                </li>
+                                <li>
+                                    Due Date Reminder Email ($0.99 value) 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-pricing">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-12 p-4">
+                            <h2>Online CA Traffic School</h2>
+                            <p class="price">$24.95</p>
+                            <button type="button" class="btn btn-primary">Select</button>
+                        </div>
+                        <div class="col-md-7 col-12 p-4 pl-5">
+                            <p>Select this course if you received a <b>CA traffic ticket or were ordered by the court</b> to attend traffic school</p>
+                            <ul>
+                                <li>
+                                    4 Tickets to IMPROV® Comedy Club ($60 value)
+                                </li>
+                                <li>
+                                    24/7 Concierge Customer Service ($9.50 value)
+                                </li>
+                                <li>
+                                    Printable Cheat Sheets to Use During Final Quiz ($4.50 value)
+                                </li>
+                                <li>
+                                    Due Date Reminder Email ($0.99 value) 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
